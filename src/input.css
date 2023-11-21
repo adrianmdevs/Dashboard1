@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply max-w-[1480px] mx-auto px-3;
+}
+.transition-default{
+    @apply transition-all duration-300 ease-in-out;
+}
+/*Page Top*/
+.page-top{
+    @apply bg-white h-[60px] border-b-[1px] border-solid border-black/10 flex items-stretch;
+}
+.navbar{
+    @apply h-full flex justify-between items-center w-auto;
+}
+.navbar-l{
+    @apply flex items-center h-full;
+}
+.navbar-r{
+    @apply flex items-center;
+}
+.navbar-brand{
+    @apply me-6 lg:me-10 my-auto font-sans relative after:absolute after:content-[] after:w-[6px] after:h-[6px]
+    after:right-2 after:bottom-2 after:rounded-full after:bg-purple-100 text-3xl;
+}
+.navlist{
+    @apply fixed flex flex-col left-0 top-0 bg-white h-full z-10 w-[240px] pt-10 pb-10 px-3 shadow-nav lg:relative lg:bg-transparent lg:h-auto
+    lg:flex-row lg:shadow-none lg:left-auto lg:top-auto lg:w-auto lg:pt-0 lg:pb-0 lg:px-0;
+}
+.navbar-hide-btn{
+    @apply absolute right-3 top-3 lg:hidden;
+}
+.navbar-hide-btn img{
+    @apply w-[28px] opacity-90;
+}
+.navbar-show-btn{
+    @apply lg:hidden cursor-pointer;
+}
+.navbar-show-btn img{
+    @apply w-[28px];
+}
+.nav-item{
+    @apply mb-4 lg:mx-5 lg:flex lg:items-center lg:mb-0;
+}
+.nav-item.active{
+    @apply border-b-[3px] border-solid border-blue-300 ;
+}
+.nav-link{
+    @apply font-bold text-slate-500 transition-default hover:text-blue-300;
+}
+.nav-icon-btns{
+    @apply flex items-center;
+}
+.nav-icon-btn{
+    @apply mx-2 xl:mx-3;
+}
+.nav-icon-btn img{
+    @apply w-[24px] opacity-90;
+}
+.nav-profile-btn{
+    @apply ms-2 flex items-center;
+}
+.profile-btn-img{
+    @apply w-[32px] rounded-full overflow-hidden me-1;
+}
+.profile-btn-icon{
+    @apply w-[24px];
+}
